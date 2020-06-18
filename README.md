@@ -6,7 +6,7 @@ Fisco-Data-Loader-Bootstrap 是一个基于[fisco-bcos](https://github.com/FISCO
 
 下图是一个简单的 fisco-bcos 区块链网络，组织 3 和组织 4 都加入了多个群组，如何将多群组的数据从链上导出，以方便应用开发？
 
-![](https://cdn.liushiming.cn/img/20200618195421.png)
+![](https://raw.githubusercontent.com/huahuayu/img/master/20200618221809.png)
 
 如果只是导单个群组的数据，fisco 官方提供了[数据导出系统](https://webasedoc.readthedocs.io/zh_CN/latest/docs/WeBASE-Collect-Bee/index.html)可以导出节点中某一个群组的数据。
 
