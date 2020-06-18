@@ -1,0 +1,5 @@
+config/resources/ca.crt
+config/resources/node.crt
+config/resources/node.key
+config/contract/*
+!config/contract/HelloWorld.java
