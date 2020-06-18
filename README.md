@@ -18,6 +18,8 @@ Fisco-Data-Loader-Bootstrap 是一个基于[fisco-bcos](https://github.com/FISCO
 
 环境要求参考[官方说明](https://github.com/WeBankFinTech/WeBASE-Collect-Bee#%E7%8E%AF%E5%A2%83%E8%A6%81%E6%B1%82)
 
+克隆项目
+
 ```bash
 git clone git@github.com:huahuayu/Fisco-Data-Loader-Bootstrap.git
 cd Fisco-Data-Loader-Bootstrap
@@ -116,3 +118,9 @@ bash restart.sh
 ```
 bash stopall.sh
 ```
+
+## License
+
+![license](http://img.shields.io/badge/license-Apache%20v2-blue.svg)
+
+开源协议为[Apache License 2.0](http://www.apache.org/licenses/). 详情参考[LICENSE](../LICENSE)。
