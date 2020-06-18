@@ -75,7 +75,6 @@ LOG_INFO "bee version = $ver"
 LOG_INFO "Reading group config file"
 if [ -f "$GROUP_CONF" ]
 then
-  LOG_INFO "$GROUP_CONF exist."
   grep -v "^#"  $GROUP_CONF | grep -v "^$" | grep "="  > $GROUP_CONF_TMP
 
   while IFS='=' read -r key value
@@ -189,7 +188,7 @@ do
     bash generate_bee.sh build
     cd $BB/$BBC/$BUILD_DIR
     chmod +x WeBASE*
-    nohup $JAVACMD -jar WeBASE* &
+    nohup $JAVACMD -jar WeBASE* >/dev/null 2>&1 &
 done
 
 LOG_INFO "bee started, view log at g*/WeBASE-Collect-Bee/WeBASE-Collect-Bee-core/dist/webasebee-core.log"
