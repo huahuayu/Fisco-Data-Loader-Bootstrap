@@ -37,10 +37,10 @@ cd Fisco-Data-Loader-Bootstrap
 │       ├── node.crt
 │       ├── node.key
 │       └── web3j.def
-├── group.conf # 多群组配置
+├── group.conf  # 多群组配置
+├── startall.sh # 首次启动或需要重新加载配置文件时使用
 ├── restart.sh  # 非首次启动（不加载配置文件）
-├── startall.sh # 首次启动、需要重新加载配置文件
-└── stopall.sh # 停止所有的数据导出实例
+└── stopall.sh  # 停止所有的数据导出实例
 ```
 
 ### 2.1 配置合约文件
