@@ -25,7 +25,6 @@ BUILD_DIR="dist"
 LOG_INFO "Reading group config file"
 if [ -f "$GROUP_CONF" ]
 then
-  LOG_INFO "$GROUP_CONF exist."
   grep -v "^#"  $GROUP_CONF | grep -v "^$" | grep "="  > $GROUP_CONF_TMP
 
   while IFS='=' read -r key value
@@ -45,8 +44,9 @@ IFS=',' read -r -a groupIdArrary <<< "$groupIds"
 for ((i=0; i<${#groupIdArrary[@]}; i++))
 do
     groupId=${groupIdArrary[$i]}
+    LOG_INFO "restarting group $groupId..."
     cd ${BASE_DIR}/g${groupId}/$BB/$BBC/$BUILD_DIR
-    nohup bash start.sh &
+    nohup bash start.sh >/dev/null 2>&1 &
 done
 
 LOG_INFO "restart succeed!"
